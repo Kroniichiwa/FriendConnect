@@ -30,7 +30,7 @@ struct LoginView: View {
                         .fontWeight(.light)
                         .foregroundColor(.white)
                 }
-                .padding(.all, 15.0)
+                Spacer()
                 
                 // Custom TextField with white placeholder text
                 CustomTextField(placeholder: "Username", text: $username)

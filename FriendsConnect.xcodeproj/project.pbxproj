@@ -15,6 +15,7 @@
 		E71F08C42AC041AF006A0FA2 /* FriendsConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08C32AC041AF006A0FA2 /* FriendsConnectUITests.swift */; };
 		E71F08C62AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08C52AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift */; };
 		E71F08D32AC04206006A0FA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08D22AC04206006A0FA2 /* LoginView.swift */; };
+		E71F08D72AC1BA69006A0FA2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08D62AC1BA69006A0FA2 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E71F08C32AC041AF006A0FA2 /* FriendsConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsConnectUITests.swift; sourceTree = "<group>"; };
 		E71F08C52AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E71F08D22AC04206006A0FA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E71F08D62AC1BA69006A0FA2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E71F08AC2AC041AF006A0FA2 /* Assets.xcassets */,
 				E71F08AE2AC041AF006A0FA2 /* Preview Content */,
 				E71F08D22AC04206006A0FA2 /* LoginView.swift */,
+				E71F08D62AC1BA69006A0FA2 /* Register.swift */,
 			);
 			path = FriendsConnect;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				E71F08D32AC04206006A0FA2 /* LoginView.swift in Sources */,
 				E71F08AB2AC041AE006A0FA2 /* ContentView.swift in Sources */,
+				E71F08D72AC1BA69006A0FA2 /* Register.swift in Sources */,
 				E71F08A92AC041AE006A0FA2 /* FriendsConnectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
