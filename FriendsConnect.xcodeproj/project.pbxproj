@@ -16,6 +16,7 @@
 		E71F08C62AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08C52AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift */; };
 		E71F08D32AC04206006A0FA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08D22AC04206006A0FA2 /* LoginView.swift */; };
 		E71F08D72AC1BA69006A0FA2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08D62AC1BA69006A0FA2 /* Register.swift */; };
+		E71F08D92AC310FC006A0FA2 /* ForgetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F08D82AC310FC006A0FA2 /* ForgetPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E71F08C52AC041AF006A0FA2 /* FriendsConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E71F08D22AC04206006A0FA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E71F08D62AC1BA69006A0FA2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		E71F08D82AC310FC006A0FA2 /* ForgetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				E71F08AE2AC041AF006A0FA2 /* Preview Content */,
 				E71F08D22AC04206006A0FA2 /* LoginView.swift */,
 				E71F08D62AC1BA69006A0FA2 /* Register.swift */,
+				E71F08D82AC310FC006A0FA2 /* ForgetPage.swift */,
 			);
 			path = FriendsConnect;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71F08D92AC310FC006A0FA2 /* ForgetPage.swift in Sources */,
 				E71F08D32AC04206006A0FA2 /* LoginView.swift in Sources */,
 				E71F08AB2AC041AE006A0FA2 /* ContentView.swift in Sources */,
 				E71F08D72AC1BA69006A0FA2 /* Register.swift in Sources */,
