@@ -11,6 +11,7 @@ struct ForgetPage: View {
     @State private var name = ""
     @State private var friendName = ""
     @State private var uid = ""
+    @State private var unique = ""
     
     
     var body: some View {
