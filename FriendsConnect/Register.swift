@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct Register: View {
-    @State private var userData = UserData(username: "", password: "", uid: "", name: "")
-
     @State private var username = ""
     @State private var password = ""
     @State private var uid = ""
     @State private var name = ""
     
+    // Define the UserData struct
+    struct UserData {
+        var username: String
+        var password: String
+        var uid: String
+        var name: String
+    }
+    
+    // Define the userData property with the UserData struct
+    @State private var userData = UserData(username: "", password: "", uid: "", name: "")
+    
+    // Add a state variable to control the alert
+    @State private var showAlert = false
     
     var body: some View {
         ZStack {
@@ -29,12 +40,16 @@ struct Register: View {
                 
                 Text("Please fill your information")
                     .foregroundColor(Color.white)
+                
                 CustomTextField(placeholder: "Name", text: $name)
                     .padding([.top, .leading, .bottom], 10)
                 CustomTextField(placeholder: "Username", text: $username)
                     .padding([.top, .leading, .bottom], 10)
                 CustomTextField(placeholder: "Password", text: $password, isSecure: true)
                     .padding([.top, .leading, .bottom], 10)
+                CustomTextField(placeholder: "UID", text: $uid)
+                    .padding([.top, .leading, .bottom], 10)
+                
                 Button(action: {
                     // Store the user's data in userData
                     userData.username = username
@@ -56,33 +71,17 @@ struct Register: View {
                 }
                 .padding(.vertical, 19.0)
                 .accessibilityLabel("Create")
-
-                // Add a state variable to control the alert
-                @State private var showAlert = false
-
-                // Use an alert to display a message
-                .alert(isPresented: $showAlert) {
-                    Alert(
-                        title: Text("Data Stored"),
-                        message: Text("User data has been stored successfully."),
-                        dismissButton: .default(Text("OK"))
-                    )
-                }
-
-
-                .padding(.vertical, 19.0)
-                .accessibilityLabel("Create")
-                
-                Spacer()
             }
         }
+        // Use an alert to display a message
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Data Stored"),
+                message: Text("User data has been stored successfully."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
     }
-}
-struct UserData {
-    var username: String
-    var password: String
-    var uid: String
-    var name: String
 }
 
 struct Register_Previews: PreviewProvider {
@@ -90,4 +89,3 @@ struct Register_Previews: PreviewProvider {
         Register()
     }
 }
-
